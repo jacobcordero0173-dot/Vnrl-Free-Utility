@@ -643,7 +643,10 @@ Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v 
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v ""ThreadDpcEnable"" /t REG_DWORD /d ""1"" /f
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v ""DpcWatchdogPeriod"" /t REG_DWORD /d ""0"" /f
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v ""InterruptSteeringDisabled"" /t REG_DWORD /d ""1"" /f
-
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v PriorityControl /t REG_DWORD /d 50 /f
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v DisableOverlappedExecution /t REG_DWORD /d 0 /f
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v TimeIncrement /t REG_DWORD /d 15 /f
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v QuantumLength /t REG_DWORD /d 20 /f
     ";
             ExecuteBatchCommands(batchCommands);
         }
@@ -657,6 +660,15 @@ Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power"" /v ""EnergyEstimatio
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power"" /v ""EventProcessorEnabled"" /t REG_DWORD /d ""0"" /f
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power"" /v ""CsEnabled"" /t REG_DWORD /d ""0"" /f
 Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling"" /v ""PowerThrottlingOff"" /t REG_DWORD /d ""1"" /f
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power"" /v ""HibernateEnabled"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power"" /v ""HibernateEnabledDefault"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings"" /v ""ShowLockOption"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings"" /v ""ShowSleepOption"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power"" /v ""HiberbootEnabled"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\SYSTEM\ControlSet001\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\0cc5b647-c1df-4637-891a-dec35c318583"" /v ""ValueMax"" /t REG_DWORD /d ""0"" /f >nul 2>&1""
+Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling"" /v ""PowerThrottlingOff"" /t REG_DWORD /d ""1"" /f >nul 2>&1""
+Reg.exe add ""HKLM\System\ControlSet001\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\0853a681-27c8-4100-a2fd-82013e970683"" /v ""Attributes"" /t REG_DWORD /d ""2"" /f >nul 2>&1""
+Reg.exe add ""HKLM\System\ControlSet001\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\d4e98f31-5ffe-4ce1-be31-1b38b384c009"" /v ""Attributes"" /t REG_DWORD /d ""2"" /f >nul 2>&1""
     ";
             ExecuteBatchCommands(batchCommands);
         }

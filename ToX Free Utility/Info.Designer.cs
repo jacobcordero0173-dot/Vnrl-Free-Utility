@@ -207,7 +207,7 @@
             this.welcomemsg.Name = "welcomemsg";
             this.welcomemsg.Size = new System.Drawing.Size(187, 26);
             this.welcomemsg.TabIndex = 29;
-            this.welcomemsg.Text = "ToX Tweaks 2024 |";
+            this.welcomemsg.Text = "ToX Tweaks 2025 |";
             this.welcomemsg.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // guna2GradientPanel2

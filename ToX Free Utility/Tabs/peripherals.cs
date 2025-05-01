@@ -112,18 +112,44 @@ namespace ToX_Free_Utility.Tabs
 
         private void MouseOptimization()
         {
-            ExecuteBatchCommand("Reg.exe add \"HKLM\\SOFTWARE\\Microsoft\\Input\\Settings\\ControllerProcessor\\CursorSpeed\" /v \"CursorSensitivity\" /t REG_DWORD /d \"64\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKLM\\SOFTWARE\\Microsoft\\Input\\Settings\\ControllerProcessor\\CursorSpeed\" /v \"CursorUpdateInterval\" /t REG_DWORD /d \"1\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKLM\\SOFTWARE\\Microsoft\\Input\\Settings\\ControllerProcessor\\CursorSpeed\" /v \"IRecho !S_MAGENTA!oteNavigationDelta\" /t REG_DWORD /d \"10\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKLM\\SOFTWARE\\Microsoft\\Input\\Settings\\ControllerProcessor\\CursorMagnetism\" /v \"AttractionRectInsetInDIPS\" /t REG_DWORD /d \"5\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKLM\\SOFTWARE\\Microsoft\\Input\\Settings\\ControllerProcessor\\CursorMagnetism\" /v \"DistanceThresholdInDIPS\" /t REG_DWORD /d \"40\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKCU\\Control Panel\\Mouse\" /v \"MouseSensitivity\" /t REG_SZ /d \"10\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKU\\.DEFAULT\\Control Panel\\Mouse\" /v \"MouseSpeed\" /t REG_SZ /d \"0\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKU\\.DEFAULT\\Control Panel\\Mouse\" /v \"MouseThreshold1\" /t REG_SZ /d \"0\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKU\\.DEFAULT\\Control Panel\\Mouse\" /v \"MouseThreshold2\" /t REG_SZ /d \"0\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKCU\\Control Panel\\Mouse\" /v \"SmoothMouseYCurve\" /t REG_BINARY /d \"0000000000000000000038000000000000007000000000000000A800000000000000E00000000000\" /f\r\n");
-            ExecuteBatchCommand("Reg.exe add \"HKCU\\Control Panel\\Mouse\" /v \"SmoothMouseXCurve\" /t REG_BINARY /d \"0000000000000000C0CC0C0000000000809919000000000040662600000000000033330000000000\" /f\r\n");
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed"" /v ""CursorSensitivity"" /t REG_DWORD /d 64 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorSpeed"" /v ""CursorUpdateInterval"" /t REG_DWORD /d 1 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism"" /v ""AttractionRectInsetInDIPS"" /t REG_DWORD /d 5 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SOFTWARE\Microsoft\Input\Settings\ControllerProcessor\CursorMagnetism"" /v ""DistanceThresholdInDIPS"" /t REG_DWORD /d 40 /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseSensitivity"" /t REG_SZ /d 10 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Mouse"" /v ""MouseSpeed"" /t REG_SZ /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Mouse"" /v ""MouseThreshold1"" /t REG_SZ /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Mouse"" /v ""MouseThreshold2"" /t REG_SZ /d 0 /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""SmoothMouseYCurve"" /t REG_BINARY /d 0000000000000000000038000000000000007000000000000000A800000000000000E00000000000 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""SmoothMouseXCurve"" /t REG_BINARY /d 0000000000000000C0CC0C0000000000809919000000000040662600000000000033330000000000 /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Services\mouclass\Parameters"" /v ""ThreadPriority"" /t REG_DWORD /d 31 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v ""DebugPollInterval"" /t REG_DWORD /d 1000 /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Desktop"" /v ""ForegroundLockTimeout"" /t REG_DWORD /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Desktop"" /v ""MenuShowDelay"" /t REG_SZ /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Desktop"" /v ""MouseWheelRouting"" /t REG_DWORD /d 0 /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Mouse"" /v ""Beep"" /t REG_SZ /d No /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Mouse"" /v ""ExtendedSounds"" /t REG_SZ /d No /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKU\.DEFAULT\Control Panel\Sound"" /v ""Beep"" /t REG_SZ /d no /f");
+
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""ActiveWindowTracking"" /t REG_DWORD /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""Beep"" /t REG_SZ /d No /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""DoubleClickHeight"" /t REG_SZ /d 4 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""DoubleClickSpeed"" /t REG_SZ /d 500 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""DoubleClickWidth"" /t REG_SZ /d 4 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""ExtendedSounds"" /t REG_SZ /d No /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseHoverHeight"" /t REG_SZ /d 4 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseHoverWidth"" /t REG_SZ /d 4 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseSensitivity"" /t REG_SZ /d 10 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseSpeed"" /t REG_SZ /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseThreshold1"" /t REG_SZ /d 0 /f");
+            ExecuteBatchCommand(@"Reg.exe add ""HKCU\Control Panel\Mouse"" /v ""MouseThreshold2"" /t REG_SZ /d 0 /f");
         }
+
 
         private void RevertMouseOptimization()
         {
@@ -168,7 +194,17 @@ namespace ToX_Free_Utility.Tabs
             ExecuteBatchCommand("Reg.exe delete \"HKCU\\Control Panel\\Accessibility\\Keyboard Response\" /v \"Last Valid Wait\" /f");
             ExecuteBatchCommand("Reg.exe delete \"HKCU\\Control Panel\\Accessibility\\StickyKeys\" /v \"Flags\" /f");
             ExecuteBatchCommand("Reg.exe delete \"HKCU\\Control Panel\\Accessibility\\ToggleKeys\" /v \"Flags\" /f");
+
+            ExecuteBatchCommand("Reg.exe add \"HKCU\\Control Panel\\Keyboard\" /v \"KeyboardDelay\" /t REG_SZ /d \"0\" /f");
+
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"KeyboardDataQueueSize\" /t REG_DWORD /d 16 /f");
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"PollingIterations\" /t REG_DWORD /d 8 /f");
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"KeyRepeatRate\" /t REG_DWORD /d 10 /f");
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"KeyRepeatDelay\" /t REG_DWORD /d 200 /f");
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"DisableKeyboardJitter\" /t REG_DWORD /d 1 /f");
+            ExecuteBatchCommand("Reg.exe add \"HKLM\\SYSTEM\\CurrentControlSet\\Services\\kbdclass\\Parameters\" /v \"MaximumDeviceQueue\" /t REG_DWORD /d 100 /f");
         }
+
 
         private void KeyboardDelay()
         {

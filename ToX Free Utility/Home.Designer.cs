@@ -394,7 +394,7 @@
             this.guna2VScrollBar1.HighlightOnWheel = true;
             this.guna2VScrollBar1.InUpdate = false;
             this.guna2VScrollBar1.Location = new System.Drawing.Point(317, 48);
-            this.guna2VScrollBar1.Maximum = 9;
+            this.guna2VScrollBar1.Maximum = 6;
             this.guna2VScrollBar1.Name = "guna2VScrollBar1";
             this.guna2VScrollBar1.ScrollbarSize = 18;
             this.guna2VScrollBar1.Size = new System.Drawing.Size(18, 115);
@@ -413,14 +413,11 @@
             this.listBox1.ItemHeight = 23;
             this.listBox1.Items.AddRange(new object[] {
             " • Minor UI Improvements",
-            " • Added New Tweaks Page",
-            " • 6+ New Optimizations",
-            " • Improved PowerPlan",
-            " • Added FSE ON Option",
-            " • Added Kernel Tweaks",
-            " • Added Advanced Services",
-            " • Fixed Some Animations",
-            " • Fixed Home Tab Bug",
+            " • Minor Bug Fixes",
+            " • Reworked All Tweaks",
+            " • Improved All Tweaks",
+            " • Improved Power Plan",
+            " • Added Warnings",
             " & more"});
             this.listBox1.Location = new System.Drawing.Point(15, 48);
             this.listBox1.Name = "listBox1";
@@ -451,7 +448,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(167, 24);
             this.label5.TabIndex = 0;
-            this.label5.Text = "- Change-Log (v2.1)";
+            this.label5.Text = "- Change-Log (v2.3)";
             // 
             // label6
             // 

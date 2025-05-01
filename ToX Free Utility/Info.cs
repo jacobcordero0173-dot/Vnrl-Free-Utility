@@ -16,7 +16,6 @@ namespace ToX_Free_Utility
             InitializeComponent();
             InitializeComponents();
             FetchDownloadCount();
-            CenterLabel();
         }
 
         private void OpenDiscordInvite(string inviteCode)
@@ -120,12 +119,10 @@ namespace ToX_Free_Utility
 
         private void TrustPilot_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Soon");
         }
 
         private void PayPal_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Soon");
         }
         private async void FetchDownloadCount()
         {
@@ -164,6 +161,8 @@ namespace ToX_Free_Utility
             {
                 downloads.Text = "Error: " + ex.Message;
             }
+
+            CenterLabel();
         }
 
         private void CenterLabel()
