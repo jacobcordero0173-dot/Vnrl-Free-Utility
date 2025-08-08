@@ -175,7 +175,7 @@ namespace ToX_Free_Utility
 
         private async void UpdateChecker_Click(object sender, EventArgs e)
         {
-            string currentVersion = "2.2";
+            string currentVersion = "2.3";
             string apiUrl = "https://api.github.com/repos/ToXTweaks/ToX-Free-Utility/releases/latest";
 
             try

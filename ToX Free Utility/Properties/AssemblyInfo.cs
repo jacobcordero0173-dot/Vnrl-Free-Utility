@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ToX Free Utility v2.2")]
+[assembly: AssemblyTitle("ToX Free Utility v2.3")]
 [assembly: AssemblyDescription("Free Windows Optimizer & Game Booster by ToX Tweaks © 2025 | discord.gg/toxtweaks")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("https://toxtweaks.com/")]

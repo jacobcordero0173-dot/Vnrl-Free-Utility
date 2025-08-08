@@ -886,5 +886,14 @@ powercfg /setdcvalueindex 44444244-4444-4444-4444-444444444420 de830923-a562-41a
         }
         #endregion
 
+        private void guna2PictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Separator5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

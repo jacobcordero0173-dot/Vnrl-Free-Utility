@@ -33,7 +33,10 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Services = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,6 +48,9 @@
             this.FSE = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2Separator8 = new Guna.UI2.WinForms.Guna2Separator();
             this.label10 = new System.Windows.Forms.Label();
             this.Power = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label11 = new System.Windows.Forms.Label();
@@ -78,16 +84,15 @@
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.NextPage = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.label18 = new System.Windows.Forms.Label();
-            this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2Separator8 = new Guna.UI2.WinForms.Guna2Separator();
+            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2GradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2GradientPanel5.SuspendLayout();
@@ -100,8 +105,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -132,6 +136,9 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.BorderRadius = 8;
             this.guna2GradientPanel1.BorderThickness = 2;
+            this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox13);
+            this.guna2GradientPanel1.Controls.Add(this.label21);
+            this.guna2GradientPanel1.Controls.Add(this.guna2Separator3);
             this.guna2GradientPanel1.Controls.Add(this.label18);
             this.guna2GradientPanel1.Controls.Add(this.guna2Separator6);
             this.guna2GradientPanel1.Controls.Add(this.label1);
@@ -146,6 +153,25 @@
             this.guna2GradientPanel1.TabIndex = 27;
             this.guna2GradientPanel1.UseTransparentBackground = true;
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Trebuchet MS", 10F);
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.label18.Location = new System.Drawing.Point(30, 129);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(37, 18);
+            this.label18.TabIndex = 114;
+            this.label18.Text = "Beta";
+            // 
+            // guna2Separator6
+            // 
+            this.guna2Separator6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
+            this.guna2Separator6.Location = new System.Drawing.Point(13, 145);
+            this.guna2Separator6.Name = "guna2Separator6";
+            this.guna2Separator6.Size = new System.Drawing.Size(51, 10);
+            this.guna2Separator6.TabIndex = 113;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -157,6 +183,21 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Disables advanced Windows services to maximize performance, free up system\r\nresou" +
     "rces, and minimize background activity for expert-level optimization.";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BorderRadius = 7;
+            this.guna2PictureBox1.Enabled = false;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 123);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(22, 22);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 112;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // Services
             // 
@@ -330,6 +371,40 @@
             this.guna2GradientPanel3.Size = new System.Drawing.Size(531, 159);
             this.guna2GradientPanel3.TabIndex = 109;
             this.guna2GradientPanel3.UseTransparentBackground = true;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.BorderRadius = 7;
+            this.guna2PictureBox3.Enabled = false;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(10, 126);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(22, 22);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 115;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 10F);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.label9.Location = new System.Drawing.Point(30, 129);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(95, 18);
+            this.label9.TabIndex = 116;
+            this.label9.Text = "Power Hungry";
+            // 
+            // guna2Separator8
+            // 
+            this.guna2Separator8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.guna2Separator8.Location = new System.Drawing.Point(13, 145);
+            this.guna2Separator8.Name = "guna2Separator8";
+            this.guna2Separator8.Size = new System.Drawing.Size(108, 10);
+            this.guna2Separator8.TabIndex = 117;
             // 
             // label10
             // 
@@ -827,73 +902,39 @@
             this.NextPage.TabIndex = 126;
             this.NextPage.Click += new System.EventHandler(this.NextPage_Click);
             // 
-            // label18
+            // guna2PictureBox13
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Trebuchet MS", 10F);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
-            this.label18.Location = new System.Drawing.Point(30, 129);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(37, 18);
-            this.label18.TabIndex = 114;
-            this.label18.Text = "Beta";
+            this.guna2PictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox13.BorderRadius = 7;
+            this.guna2PictureBox13.Enabled = false;
+            this.guna2PictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox13.Image")));
+            this.guna2PictureBox13.ImageRotate = 0F;
+            this.guna2PictureBox13.Location = new System.Drawing.Point(70, 126);
+            this.guna2PictureBox13.Name = "guna2PictureBox13";
+            this.guna2PictureBox13.Size = new System.Drawing.Size(22, 22);
+            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox13.TabIndex = 115;
+            this.guna2PictureBox13.TabStop = false;
+            this.guna2PictureBox13.UseTransparentBackground = true;
             // 
-            // guna2Separator6
+            // label21
             // 
-            this.guna2Separator6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(142)))), ((int)(((byte)(203)))));
-            this.guna2Separator6.Location = new System.Drawing.Point(13, 145);
-            this.guna2Separator6.Name = "guna2Separator6";
-            this.guna2Separator6.Size = new System.Drawing.Size(51, 10);
-            this.guna2Separator6.TabIndex = 113;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Trebuchet MS", 10F);
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(33)))));
+            this.label21.Location = new System.Drawing.Point(90, 129);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(115, 18);
+            this.label21.TabIndex = 116;
+            this.label21.Text = "Feature Breaking";
             // 
-            // guna2PictureBox1
+            // guna2Separator3
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderRadius = 7;
-            this.guna2PictureBox1.Enabled = false;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(10, 123);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(22, 22);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 112;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.BorderRadius = 7;
-            this.guna2PictureBox3.Enabled = false;
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(10, 126);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(22, 22);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 115;
-            this.guna2PictureBox3.TabStop = false;
-            this.guna2PictureBox3.UseTransparentBackground = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 10F);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.label9.Location = new System.Drawing.Point(30, 129);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 18);
-            this.label9.TabIndex = 116;
-            this.label9.Text = "Power Hungry";
-            // 
-            // guna2Separator8
-            // 
-            this.guna2Separator8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.guna2Separator8.Location = new System.Drawing.Point(13, 145);
-            this.guna2Separator8.Name = "guna2Separator8";
-            this.guna2Separator8.Size = new System.Drawing.Size(108, 10);
-            this.guna2Separator8.TabIndex = 117;
+            this.guna2Separator3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(33)))));
+            this.guna2Separator3.Location = new System.Drawing.Point(73, 145);
+            this.guna2Separator3.Name = "guna2Separator3";
+            this.guna2Separator3.Size = new System.Drawing.Size(126, 10);
+            this.guna2Separator3.TabIndex = 117;
             // 
             // WindowsTweaksP5
             // 
@@ -924,11 +965,13 @@
             this.Load += new System.EventHandler(this.WindowsTweaks_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.guna2GradientPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -944,8 +987,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1007,5 +1049,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
+        private System.Windows.Forms.Label label21;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator3;
     }
 }
