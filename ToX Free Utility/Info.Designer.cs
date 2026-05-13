@@ -1,4 +1,4 @@
-﻿namespace ToX_Free_Utility
+﻿namespace Vnrl_Free_Utility
 {
     partial class Info
     {
