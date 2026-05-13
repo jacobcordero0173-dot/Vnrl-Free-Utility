@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ToX_Free_Utility
+namespace Vnrl_Free_Utility
 {
     public partial class Home : Form
     {
