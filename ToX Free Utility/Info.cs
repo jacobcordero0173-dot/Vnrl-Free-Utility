@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace ToX_Free_Utility
+namespace Vnrl_Free_Utility
 {
     public partial class Info : Form
     {
