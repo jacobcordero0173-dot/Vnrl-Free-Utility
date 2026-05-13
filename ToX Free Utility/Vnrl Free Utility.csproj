@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{87CBEA24-8499-4E65-B2E8-9FC84E7E1691}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ToX_Free_Utility</RootNamespace>
-    <AssemblyName>ToX Free Utility</AssemblyName>
+    <RootNamespace>Vnrl_Free_Utility</RootNamespace>
+    <AssemblyName>Vnrl Free Utility</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,7 +55,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>TOXLOGO.ico</ApplicationIcon>
+    <ApplicationIcon>VNRLLOGO.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
